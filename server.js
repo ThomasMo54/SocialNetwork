@@ -7,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Config and connect to mongoDB database
-const uri = "mongodb+srv://admin:031003Tm@ticketmanager-ahqhu.mongodb.net/SocialNetwork?retryWrites=true&w=majority";
+const uri = "mongodb+srv://admin:PASSWORD@ticketmanager-ahqhu.mongodb.net/SocialNetwork?retryWrites=true&w=majority";
 mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true})
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
